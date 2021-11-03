@@ -85,11 +85,11 @@ export class CdkPipelinesStack extends cdk.Stack {
 
     switch (sourceProps.gitType) {
 
-      case 'github':
+      case 'GITHUB':
         return CodePipelineSource.gitHub(sourceProps.repoString, sourceProps.branch, {
           authentication: SecretValue.secretsManager(sourceProps.githubToken ?? ''),
         });
-      case 'codecommit':
+      case 'CODECOMMIT':
         return CodePipelineSource.codeCommit(
           codecommit.Repository.fromRepositoryName(this, 'Repository', sourceProps.repoString), sourceProps.branch);
 
