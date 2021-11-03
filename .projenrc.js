@@ -8,7 +8,6 @@ const project = new AwsCdkTypeScriptApp({
     '@aws-cdk/core',
     '@aws-cdk/pipelines',
     '@aws-cdk/aws-codecommit',
-    '@aws-cdk/aws-s3',
   ], /* Which AWS CDK modules (those that start with "@aws-cdk/") this app uses. */
   deps: [
     'chalk',
