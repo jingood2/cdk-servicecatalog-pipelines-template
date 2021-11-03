@@ -94,9 +94,6 @@ export class CdkPipelinesStack extends cdk.Stack {
           codecommit.Repository.fromRepositoryName(this, 'Repository', sourceProps.repoString), sourceProps.branch);
 
       default :
-        /* return CodePipelineSource.gitHub(sourceProps.repoString, sourceProps.branch, {
-          authentication: SecretValue.secretsManager(envVars.GITHUB_TOKEN),
-        }); */
         return undefined;
 
     }
@@ -111,10 +108,3 @@ export class CdkPipelinesStack extends cdk.Stack {
   }
  }
  */
-
-export class MyStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props: cdk.StackProps = {}) {
-    super(scope, id, props);
-    // define resources here...
-  }
-}

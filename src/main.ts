@@ -1,13 +1,7 @@
 import { App, Aws, Construct, Stack, StackProps } from '@aws-cdk/core';
 import { CdkPipelinesStack } from './lib/cdk-pipelines';
 
-export class MyStack extends Stack {
-  constructor(scope: Construct, id: string, props: StackProps = {}) {
-    super(scope, id, props);
 
-    // define resources here...
-  }
-}
 
 // for development, use account/region from cdk cli
 const devEnv = {
