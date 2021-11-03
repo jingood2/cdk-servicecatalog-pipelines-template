@@ -65,6 +65,7 @@ export class CdkPipelinesStack extends cdk.Stack {
     };
 
     new CodePipeline(this, 'Pipeline', {
+      selfMutation: false,
       pipelineName: `${envVars.COMPANY_NAME}-${envVars.PROJECT_NAME}`,
       synth: new ShellStep('Synth', {
         input: this.getCodepipelineSource(pipelinesProps),
