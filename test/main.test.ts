@@ -1,6 +1,7 @@
 import '@aws-cdk/assert/jest';
 import { App } from '@aws-cdk/core';
-import { MyStack } from '../src/main';
+import { MyStack } from '../src/lib/my-stack';
+
 
 test('Snapshot', () => {
   const app = new App();
