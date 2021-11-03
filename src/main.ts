@@ -1,4 +1,4 @@
-import { App, Aws } from '@aws-cdk/core';
+import { App } from '@aws-cdk/core';
 import { CdkPipelinesStack } from './lib/cdk-pipelines';
 
 // for development, use account/region from cdk cli
