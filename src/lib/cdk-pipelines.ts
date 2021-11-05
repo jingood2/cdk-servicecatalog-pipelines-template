@@ -67,12 +67,12 @@ export class CdkPipelinesStack extends cdk.Stack {
 
     const pipeline = new CodePipeline(this, 'Pipeline', {
       selfMutation: true,
-      pipelineName: `${envVars.COMPANY_NAME}-${envVars.PROJECT_NAME}`,
+      pipelineName: `${envVars.COMPANY_NAME}-${envVars.PROJECT_NAME}-pipeline`,
       synth: new ShellStep('Synth', {
         input: this.getCodepipelineSource(pipelinesProps),
         commands: [
-          'yarn install --frozen-lockfile',
-          'yarn build',
+          'npm i',
+          'npm run build',
           'npx cdk synth',
         ],
       }),
