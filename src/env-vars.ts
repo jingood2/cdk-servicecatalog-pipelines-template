@@ -3,7 +3,7 @@ import * as chalk from 'chalk';
 export const envVars = {
   REGION: process.env.REGION || 'ap-northeast-2',
   COMPANY_NAME: 'acme',
-  PROJECT_NAME: 'cdk-demo-app',
+  PROJECT_NAME: 'servicecatalog-cicd',
   SOURCE_PROVIDER: 'GITHUB',
   REPO: 'jingood2/cdk-infra-pipelines-template',
   BRANCH: 'main',

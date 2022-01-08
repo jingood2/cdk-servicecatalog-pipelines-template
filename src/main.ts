@@ -6,8 +6,6 @@ import { CdkPipelinesStack } from './lib/cdk-pipelines';
 const devEnv = {
   account: process.env.CDK_DEFAULT_ACCOUNT,
   region: process.env.CDK_DEFAULT_REGION,
-  //account: Aws.ACCOUNT_ID,
-  //regtion: Aws.REGION,
 };
 
 const app = new App();
