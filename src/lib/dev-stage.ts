@@ -1,6 +1,6 @@
 import * as cdk from '@aws-cdk/core';
-import { envVars } from '../env-vars';
 import { MyStack } from './my-stack';
+import { envVars } from '../env-vars';
 
 export interface DevStageProps extends cdk.StageProps{
 
